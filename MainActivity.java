@@ -41,17 +41,6 @@ public class MainActivity extends AppCompatActivity {
                 R.array.months_array, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
-        //spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            //@Override
-            //public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            //}
-
-            //@Override
-            //public void onNothingSelected(AdapterView<?> parent) {
-
-            //}
-        //});
         requestQueue = Volley.newRequestQueue(this);
         startAPICall = findViewById(R.id.getPrediction);
         setText = findViewById(R.id.prediction);
